@@ -1,3 +1,37 @@
+<?php
+try {
+    
+    require("connect.php");
+
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $difficulty = $_POST['difficulty'];
+        $distance = $_POST['distance'];
+        $duration = $_POST['duration'];
+        $height = $_POST['height_difference'];
+
+        if (
+            is_numeric($distance) &&
+            is_numeric($height) &&
+            is_string($duration) &&
+            is_string($name) &&
+            is_string($difficulty)
+        ) {
+            $sql = "INSERT INTO hiking (name, difficulty, distance, duration, height_difference) VALUES (?,?,?,?,?)";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute([$name, $difficulty, $distance, $duration, $height]);
+
+            echo "The hiking was added successfully.";
+        } else {
+            echo "Please add valid informations.";
+        }
+    }
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
