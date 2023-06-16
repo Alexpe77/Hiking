@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    nav {
+        font-size: 16px;
+    }
+    header {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .title_container {
+            height: 80px;
+            background-color: #5C4742;
+        }
+        h1 {
+            font-family: 'Bagel Fat One';
+            font-size: 40px;
+            color: #C4BBAF;
+        }
+    }
+}
+
+.displayed_hikes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        margin-top: 20px;
+}
