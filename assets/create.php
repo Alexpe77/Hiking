@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Let's hike!</title>
+	<title>Create your next hike</title>
 	<link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>

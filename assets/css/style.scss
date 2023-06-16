@@ -6,18 +6,22 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+
     nav {
         font-size: 16px;
     }
+
     header {
         text-align: center;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+
         .title_container {
             height: 80px;
             background-color: #5C4742;
         }
+
         h1 {
             font-family: 'Bagel Fat One';
             font-size: 40px;
@@ -26,10 +30,26 @@ body {
     }
 }
 
-.displayed_hikes {
+main {
+    .displayed_hikes {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-content: center;
+        flex-wrap: wrap;
         margin-top: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 280px;
+        text-align: center;
+        ul {
+            margin: 10px 0 10px 0;
+            li {
+                &:first-child {
+                background-color: #C4BBAF;
+                width: 279px;
+                }
+            }
+        }
+    }  
 }
