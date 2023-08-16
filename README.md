@@ -12,4 +12,7 @@ Those were the requirements :
 
 ## Technology use
 
-PHP, JavaScript, MySQL
+PHP, JavaScript, Tailwind, MySQL
+
+## Screen shot
+![](assets/img/screen.png)
