@@ -26,10 +26,11 @@ transition-colors duration-300 hover:bg-gray-800 hover:text-white">Add a new hik
             foreach ($result as $row) {
                 echo '<div class="displayed_hikes">';
                 echo '<ul>';
+                echo '<ul><img src="./img/reunion.jpg"></ul>';
                 echo '<li>Name : ' . $row['name'] . '</li>';
                 echo '<li>Difficulty : ' . $row['difficulty'] . '</li>';
                 echo '<li>Distance : ' . $row['distance'] . 'm' . '</li>';
-                echo '<li>Duration : ' . $row['duration'] . '</li>';
+                echo '<li>Duration : ' . $row['duration'] . 'h' . '</li>';
                 echo '<li>Height Difference : + ' . $row['height_difference'] . 'm' . '</li>';
                 echo '</ul>';
                 echo '</div>';

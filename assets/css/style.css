@@ -26,13 +26,15 @@ body header h1 {
   color: #C4BBAF;
 }
 
+main {
+  display: flex;
+}
 main .displayed_hikes {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin: 20px 0 0 20px;
   border: 1px solid black;
   border-radius: 10px;
   width: 280px;
